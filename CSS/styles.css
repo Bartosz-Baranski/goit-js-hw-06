@@ -8,8 +8,16 @@ body {
   font-family: var(--main-text-font);
   color: var(--main-text-color);
   font-weight: 400px;
-  max-width: auto;
+  margin: 10px;
+  background-color: whitesmoke;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  padding-left: 0px;
+}
+
 .main-title {
   font-family: var(--second-text-font);
   font-size: 40px;
@@ -26,7 +34,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 40px;
 }
 .nav-page_link {
@@ -34,5 +42,21 @@ body {
   text-decoration: none;
   border: 2px solid black;
   padding: 5px;
-  color: green;
+  color: red;
+}
+.nav-page_link:focus,
+.nav-page_link:hover {
+  color: greenyellow;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.gallery > li > img {
+  width: 600px;
+  height: 400px;
 }
