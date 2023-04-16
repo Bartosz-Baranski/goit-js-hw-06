@@ -52,11 +52,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  list-style-type: none;
   align-items: center;
+  list-style-type: none;
 }
 
 .gallery > li > img {
   width: 600px;
   height: 400px;
+}
+#counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
