@@ -7,8 +7,8 @@ function stopSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    alert("Please fill all the fields!");
-    return alert;
+    let message = "Please fill all the fields!";
+    return message;
   } else {
     const complete = {
       email: email.value,
