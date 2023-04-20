@@ -7,11 +7,12 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
 btnColorChange.addEventListener("click", () => {
   bodyColor.style.backgroundColor = getRandomHexColor();
 
-  colorChange.textContent = getRandomHexColor();
+  colorChange.textContent = bodyColor.style.backgroundColor;
 });
-
+console.log(getRandomHexColor);
 console.log(colorChange);
 console.log(btnColorChange);
