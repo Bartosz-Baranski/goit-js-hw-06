@@ -7,17 +7,16 @@ function stopSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    let message = "Please fill all the fields!";
-    return message;
+    return alert("Please fill all the fields!");
   } else {
     const complete = {
       email: email.value,
       password: password.value,
     };
-    event.currentTarget.reset();
     console.log(complete);
+    event.currentTarget.reset();
   }
 }
 form.addEventListener("submit", stopSubmit);
-console.log(form);
-console.log(alert);
+// console.log(form);
+// console.log(alert);
