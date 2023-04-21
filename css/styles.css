@@ -12,9 +12,7 @@ body {
   background-color: whitesmoke;
 }
 .container {
-  /* display: flex; */
-  /* justify-content: center; */
-  width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   height: auto;
   padding-left: 0px;
@@ -42,7 +40,6 @@ body {
 .nav-page_list {
   list-style: none;
   display: flex;
-  /* justify-content: space-evenly; */
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 40px;
